@@ -27,7 +27,7 @@ class Yiiwatermark extends CApplicationComponent {
         }
     }
 
-    private function getImageType($image)
+    private function getImageType($image) {
         $type = exif_imagetype($image);
         switch ($type) {
             case IMAGETYPE_GIF:
@@ -44,4 +44,5 @@ class Yiiwatermark extends CApplicationComponent {
               break;
         } 
         return $ext;
+    }
 } 
