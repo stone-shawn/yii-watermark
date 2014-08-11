@@ -11,7 +11,7 @@ In Yii config file:
 'components' => array(
     .....
     'watermark' => array(
-      'class' => 'XQwatermark',
+      'class' => 'Yiiwatermark',
       'watermarkImage' => '/themes/blue/assets/images/watermark.png',
     ),
     .....
