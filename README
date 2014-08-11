@@ -1,0 +1,26 @@
+A Yii watermark extension using a exsited watermark class on github 
+which is:https://github.com/Dariusp/php-simple-watermark
+And in fact I did some modifications on this class to perform with more image types like png,gif
+
+Example:
+
+<pre>
+In Yii config file:
+
+
+'components' => array(
+    .....
+    'watermark' => array(
+      'class' => 'XQwatermark',
+      'watermarkImage' => '/themes/blue/assets/images/watermark.png',
+    ),
+    .....
+),
+
+</pre>
+
+<h3>Useage in PHP controller or other places:</h3>
+<pre>
+$sourceImage = 'D:\www\project1\images\upload\hello.jpg';
+Yii::app()->watermark->setWatermark($sourceImage, Watermark::CENTER);
+</pre>
